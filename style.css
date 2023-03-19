@@ -1,40 +1,43 @@
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    vertical-align: baseline;
-    font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  vertical-align: baseline;
+  font-size: 1.2rem;
 }
 
 body { 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;  
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
+#text #author{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 #quote-box {
-    margin: auto auto;
-    height: auto;
-    padding: 40px 50px;
-    width: 40%;
-    height: fit-content;
-    background-color: #fff;
-    border-radius: 3px;
+  margin: auto auto;
+  height: auto;
+  padding: 40px 50px;
+  width: 40%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 3px;
 }
 
 .quote-text {
-    display: flex;
+  display: flex;
 }
 
 .button-box {
-    display: flex; 
-    justify-content: flex-end;
+  display: flex; 
+  justify-content: flex-end;
 }
 
 
 .author-box { 
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,6 +1,6 @@
 window.onload = init;
 
-const colors = ["#E3D26F", "#5FAD56", "#F2C14E", "#F78154", "#4D9078", "#B4436C", "#20FC8F", "#0471A6", "A40E4C", "#dc3545"]
+
 
 function init() {
    generateQuote()
@@ -8,10 +8,14 @@ function init() {
 
 function generateQuote() {
    let randomQuote = Math.floor(Math.random() * QUOTES.length) 
-   let randomColor = Math.floor(Math.random() * colors.length)
+   let red = Math.floor(Math.random() * 255)
+   let green = Math.floor(Math.random() * 255)
+   let blue = Math.floor(Math.random() * 255)
+   let newColor = `rgba(${red}, ${green}, ${blue}, 0.5)`
 
-   document.getElementById("container").style.color = colors[randomColor]
-   document.getElementById("container").style.backgroundColor = colors[randomColor]
+   document.getElementById("container").style.color = newColor
+   document.getElementById("container").style.backgroundColor = newColor
+   document.getElementById("container").style.transition = "background-color 1s ease 0s"
    document.getElementById("text").innerText = QUOTES[randomQuote].text
    document.getElementById("author").innerText = QUOTES[randomQuote].from
 

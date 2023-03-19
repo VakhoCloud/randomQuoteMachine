@@ -13,10 +13,14 @@ body {
   justify-content: center;
 }
 
+.author-box {
+  align-items: center;
+}
 
 #text #author{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 #quote-box {
   margin: auto auto;
   height: auto;
@@ -26,8 +30,6 @@ body {
   background-color: #fff;
   border-radius: 3px;
 }
-
-
 
 .quote-text {
   display: flex;
@@ -43,4 +45,19 @@ body {
 .author-box { 
   display: flex;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  #text {
+    font-size: 1.25rem;
+  }
+
+  #author {
+    font-size: 1rem;
+  }
+  #quote-box {
+
+    width: 70%;
+    padding: 20px 25px;
+  }
 }

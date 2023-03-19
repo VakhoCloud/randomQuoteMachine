@@ -1,21 +1,39 @@
+
 window.onload = init;
 
-
-
+const colors = [
+   '#16a085',
+   '#27ae60',
+   '#2c3e50',
+   '#f39c12',
+   '#e74c3c',
+   '#9b59b6',
+   '#FB6964',
+   '#342224',
+   '#472E32',
+   '#BDBB99',
+   '#77B1A9',
+   '#73A857'
+ ];
 function init() {
    generateQuote()
 }
 
+
 function generateQuote() {
    let randomQuote = Math.floor(Math.random() * QUOTES.length) 
-   let red = Math.floor(Math.random() * 255)
-   let green = Math.floor(Math.random() * 255)
-   let blue = Math.floor(Math.random() * 255)
-   let newColor = `rgba(${red}, ${green}, ${blue}, 0.5)`
+   let newColor = colors[Math.floor(Math.random() * colors.length)]
 
    document.getElementById("container").style.color = newColor
    document.getElementById("container").style.backgroundColor = newColor
-   document.getElementById("container").style.transition = "background-color 1s ease 0s"
+   document.getElementById("container").style.transition = "background-color 1.5s ease 0s"
+   
+   document.getElementById("tweet-quote").style.backgroundColor = newColor
+   document.getElementById("tweet-quote").style.transition = "background-color 1.5s ease 0s"
+
+   document.getElementById("new-quote").style.backgroundColor = newColor
+   document.getElementById("new-quote").style.transition = "background-color 1.5s ease 0s"
+
    document.getElementById("text").innerText = QUOTES[randomQuote].text
    document.getElementById("author").innerText = QUOTES[randomQuote].from
 

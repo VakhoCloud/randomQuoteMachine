@@ -3,7 +3,6 @@
   margin: 0;
   list-style: none;
   vertical-align: baseline;
-  font-size: 1.2rem;
 }
 
 body { 
@@ -14,6 +13,7 @@ body {
   justify-content: center;
 }
 
+
 #text #author{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -21,22 +21,25 @@ body {
   margin: auto auto;
   height: auto;
   padding: 40px 50px;
-  width: 40%;
-  height: fit-content;
+  width: 30%;
+  display: table;
   background-color: #fff;
   border-radius: 3px;
 }
+
+
 
 .quote-text {
   display: flex;
 }
 
 .button-box {
-  display: flex; 
-  justify-content: flex-end;
+  float: right;
 }
 
-
+#text { 
+  font-size: 1.75rem;
+}
 .author-box { 
   display: flex;
   justify-content: flex-end;
